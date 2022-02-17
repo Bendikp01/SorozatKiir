@@ -10,11 +10,13 @@ namespace SorozatKiir
     {
         static void Main(string[] args)
         {
+            Console.Write("Adja meg a kezdő értéket! ");
+            int min = Convert.ToInt32(Console.ReadLine());
             Console.Write("Adja meg az utolsó értéket! ");
-            int szam = Convert.ToInt32(Console.ReadLine());
-            if (szam > 1)
+            int max = Convert.ToInt32(Console.ReadLine());
+            if (max > 1 && max!=min && max > min )
             {
-                for (int i = 1; i <= szam; i++)
+                for (int i = min; i <= max; i++)
                 {
                     Console.WriteLine(i);
                 }
